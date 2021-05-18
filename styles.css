@@ -1,3 +1,21 @@
 body {
-    background: green;
+    font-size: 15px;
+    margin: 0;
+    background: hsl(233, 47%, 7%);
+}
+
+/* Layout */
+
+.mobile-img {
+    width: 100%;
+}
+
+main {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.card {
+    background: hsl(244, 38%, 16%);
 }
