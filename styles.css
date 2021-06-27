@@ -30,8 +30,8 @@ main {
 .img-overlay {
     width: 100%;
     height: 100%;
-    opacity: .7;
     background-color: hsl(277, 64%, 61%);
+    mix-blend-mode: multiply;
     position: absolute;
     z-index: 1;
     border-radius: .5em .5em 0 0;
@@ -120,9 +120,9 @@ main {
 
     .card-content {
         text-align: left;
-        padding: 3em;
+        /* padding: 3em; */
         margin-right: 5em;
-        margin-left: 2em;
+        margin-left: 3em;
     }
 
     .main-heading {
