@@ -16,6 +16,8 @@ main {
     color: white;
     background: hsl(244, 38%, 16%);
     border-radius: .5em;
+    width: 375px;
+    margin: auto;
 }
 
 .img-container {
