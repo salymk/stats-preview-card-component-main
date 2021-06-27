@@ -6,16 +6,138 @@ body {
 
 /* Layout */
 
-.mobile-img {
-    width: 100%;
-}
-
 main {
     width: 90%;
-    max-width: 600px;
     margin: 0 auto;
+    padding: 4em 0;
 }
 
 .card {
+    color: white;
     background: hsl(244, 38%, 16%);
+    border-radius: .5em;
+}
+
+.img-container {
+    background: url(images/image-header-mobile.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+    border-radius: .5em .5em 0 0;
+    position: relative;
+}
+
+.img-overlay {
+    width: 100%;
+    height: 100%;
+    opacity: .7;
+    background-color: hsl(277, 64%, 61%);
+    position: absolute;
+    z-index: 1;
+    border-radius: .5em .5em 0 0;
+
+}
+
+.card-content {
+    text-align: center;
+    padding: 1.5em;
+}
+
+.main-heading {
+    font-family: inter;
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 700;
+}
+
+.main-heading span {
+    color: #AB5CDB;
+}
+
+.main-paragraph {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Inter';
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.card-stats {
+    margin-top: 2.5em;
+}
+
+.stat {
+    margin-bottom: 2em;
+}
+
+.stat:last-child {
+    margin-bottom: 0;
+}
+
+.stat h2 {
+    color: white;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 0;
+}
+
+.stat p {
+    color: hsla(0, 0%, 100%, 0.6);
+    font-family: 'Inter';
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+
+@media screen and (min-width: 1024px) {
+
+    main {
+        margin: 0px auto;
+        padding: 10em 4em;
+    }
+    
+
+    .card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 85%;
+        margin: auto;
+    }
+
+    .img-container {
+        order: 1;
+        background: url(images/image-header-desktop.jpg);
+        background-size: cover;
+        height: 100%;
+        border-radius: 0 .5em .5em 0;
+    }
+
+    .img-overlay {
+        border-radius: 0 .5em .5em 0;
+    }   
+
+    .card-content {
+        text-align: left;
+        padding: 3em;
+        margin-right: 5em;
+        margin-left: 2em;
+    }
+
+    .main-heading {
+        font-size: 36px;
+        line-height: 44px;
+        margin-top: 1.2em;
+
+    }
+    
+    .card-stats {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-right: 2em
+    }
+
+    
 }
